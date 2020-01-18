@@ -1,0 +1,71 @@
+body {
+    text-align: center;
+}
+
+h1 {
+    color: rgb(43, 130, 165);
+    font-size: 36;
+    font-weight: 200;
+}
+
+h3 {
+    color: skyblue;
+    font-weight: 100;
+}
+
+.main-title {
+    color: skyblue;
+}
+
+
+a {
+    /* color: rgb(53, 114, 138); */
+    color: rgb(94, 102, 105);
+    font-size: large;
+    font-style: normal;
+    text-decoration: none;
+    padding-left: 1%;
+    padding-right: 1%;
+}
+
+
+
+.Links {
+    padding-top: 2%;
+}
+
+.footer {
+    position: fixed;
+    color: pink;
+    background-color:  rgb(3, 42, 58);
+    bottom: 1px;
+    left: 0;
+    width: 100%;
+}
+#footer-text {
+    color:  rgb(87, 150, 175);
+    font-weight: 100;
+}
+
+.aboutImage {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    object-position: center;
+    border-radius: 50px;
+    height: 20em;
+}
+
+/* .github {
+        position: fixed;
+        bottom: 10px;
+        left: 0;   
+        height: 20px;
+} */
+form {
+    text-align:  center;
+}
+input , button{
+    padding: 10px;    
+    border-color: skyblue;
+}
