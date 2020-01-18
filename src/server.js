@@ -5,6 +5,7 @@ const weather = require('./utils/weather')
 const geoCoding = require('./utils/geoCoding')
 
 const app = express()
+const port = process.env.PORT || 3000
 
 //app used default path
 app.use(express.static(path.join(__dirname, '../public')))
@@ -21,8 +22,6 @@ hbs.registerPartials(partialPath)
 
 app.get('', (req, res) => {
     res.render('index', { title: 'GET WEATHER' })
-}).listen(3000, () => {
-    console.log("Server Started at port 3000")
 })
 
 app.get('/help', (req, res) => {
@@ -56,4 +55,8 @@ app.get('/getWeather', (req, res) => {
             }
         })
 
+})
+
+app.listen(port, () => {
+    console.log("Server Started at port" + port)
 })
